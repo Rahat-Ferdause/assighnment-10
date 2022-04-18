@@ -1,0 +1,44 @@
+[
+    {
+      "id": "625d3db4641077076b28a2b2",
+      "name": "Dubai",
+      "Price": 2500,
+      "picture": "https://i.ibb.co/Th4gJDM/city1.jpg"
+    },
+    {
+      "id": "625d3db47cc82752aec35f47",
+      "name": "NewYork,USA",
+      "Price": 6060,
+      "picture": "https://i.ibb.co/25Ds7wx/city2.jpg"
+    },
+    {
+      "id": "625d3db4e3a7656f748b8377",
+      "name": "Switzerland",
+      "Price": 2030,
+      "picture": "https://i.ibb.co/rckhT3m/city3.jpg"
+    },
+    {
+      "id": "625d3db40e2b625cd2ffef0e",
+      "name": "France",
+      "Price": 4000,
+      "picture": "https://i.ibb.co/SBbZHXr/city4.jpg"
+    },
+    {
+      "id": "625d3db460fb3cf8e9d82661",
+      "name": "Norway",
+      "Price": 7000,
+      "picture": "https://i.ibb.co/GFY6Y3n/city5.jpg"
+    },
+    {
+      "id": "625d3db45a03968b48ba99bb",
+      "name": "Germany",
+      "Price": 3030,
+      "picture": "https://i.ibb.co/dD0ZHyJ/city6.jpg"
+    }
+  ]
+
+  
+
+
+
+
