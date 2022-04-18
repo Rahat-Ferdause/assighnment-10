@@ -1,0 +1,13 @@
+.service {
+  text-align: center;
+  padding-bottom: 15px;
+  margin: 10px;
+}
+
+.service:hover {
+  background-color: rgb(200, 200, 97);
+  border-radius: 20px;
+  border-color: rgb(177, 54, 54);
+  border: 1px solid;
+}
+
