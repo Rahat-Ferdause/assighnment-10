@@ -11,6 +11,7 @@ import Login from "./Pages/LogIn/Login";
 import Register from "./Pages/Register/Register";
 import RequireAuth from "./Pages/RequireAuth/RequireAuth";
 import Donate from "./Pages/Donate/Donate/Donate";
+import Blog from "./Pages/Blog/Blog";
 
 function App() {
   return (
@@ -28,6 +29,8 @@ function App() {
           </RequireAuth>
         }></Route>
         <Route path="/about" element={<About></About>}></Route>
+        <Route path="/blog" element={<Blog></Blog>}></Route>
+
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
