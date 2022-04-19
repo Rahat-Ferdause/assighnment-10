@@ -9,6 +9,8 @@ import Detrails from "./Pages/Details/Detrails";
 import NotFound from "./Shared/NotFound/NotFound";
 import Login from "./Pages/LogIn/Login";
 import Register from "./Pages/Register/Register";
+import RequireAuth from "./Pages/RequireAuth/RequireAuth";
+import Donate from "./Pages/Donate/Donate/Donate";
 
 function App() {
   return (
@@ -20,6 +22,11 @@ function App() {
         <Route path="/service/:detailsId" element={<Detrails></Detrails>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="/donate" element={
+          <RequireAuth>
+            <Donate></Donate>
+          </RequireAuth>
+        }></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
