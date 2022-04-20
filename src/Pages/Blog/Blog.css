@@ -1,0 +1,12 @@
+.blog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.blog ul li {
+  list-style: none;
+  border-bottom: 2px solid red;
+}
+ul li {
+    list-style: none;
+  }
+  

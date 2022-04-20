@@ -7,7 +7,7 @@ import SocialMedia from "../LogIn/SocialMedia/SocialMedia";
 
 const Register = () => {
   const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   const navigate = useNavigate();
   const moveToLogin = (event) => {
     navigate("/login");
