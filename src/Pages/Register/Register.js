@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import "./Register.css";
 import auth from "../../firebase.init";
+import SocialMedia from "../LogIn/SocialMedia/SocialMedia";
 
 const Register = () => {
   const [createUserWithEmailAndPassword, user, loading, error] =
@@ -22,38 +23,41 @@ const Register = () => {
     createUserWithEmailAndPassword(email, password);
   };
   return (
-    <div className="register-form mx-auto">
-      <h1>This is Register page</h1>
-      <form onSubmit={handleRegister}>
-        <input type="text" name="name" id="" placeholder="Your Name" />
-        <br />
-        <input
-          type="email"
-          name="email"
-          id=""
-          placeholder=" Email Address"
-          required
-        />
-        <br />
-        <input
-          type="password"
-          name="password"
-          id=""
-          placeholder="password"
-          required
-        />
-        <input type="submit" value="Register" />
-      </form>
-      <p>
-        Already Account?{" "}
-        <Link
-          to="/login"
-          className="text-primary pe-auto text-decoration-none"
-          onClick={moveToLogin}
-        >
-          LogIn
-        </Link>
-      </p>
+    <div>
+      <SocialMedia></SocialMedia>
+      <div className="register-form mx-auto">
+        <h1>This is Register page</h1>
+        <form onSubmit={handleRegister}>
+          <input type="text" name="name" id="" placeholder="Your Name" />
+          <br />
+          <input
+            type="email"
+            name="email"
+            id=""
+            placeholder=" Email Address"
+            required
+          />
+          <br />
+          <input
+            type="password"
+            name="password"
+            id=""
+            placeholder="password"
+            required
+          />
+          <input type="submit" value="Register" />
+        </form>
+        <p>
+          Already Account?{" "}
+          <Link
+            to="/login"
+            className="text-primary pe-auto text-decoration-none"
+            onClick={moveToLogin}
+          >
+            LogIn
+          </Link>
+        </p>
+      </div>
     </div>
   );
 };
