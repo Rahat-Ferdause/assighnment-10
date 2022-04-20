@@ -6,7 +6,7 @@ import auth from "../../firebase.init";
 import SocialMedia from "../LogIn/SocialMedia/SocialMedia";
 
 const Register = () => {
-  const [createUserWithEmailAndPassword, user, loading, error] =
+  const [createUserWithEmailAndPassword, user] =
     useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   const navigate = useNavigate();
   const moveToLogin = (event) => {
